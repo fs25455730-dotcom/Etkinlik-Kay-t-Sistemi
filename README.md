@@ -25,10 +25,15 @@ Bu proje sayesinde organizasyon süreçleri dijital ortama taşınarak:
 Bu sistemin temel amacı:
 
 ✅ Etkinlik yönetimini kolaylaştırmak
+
 ✅ Katılımcı kayıtlarını düzenlemek
+
 ✅ Bilet süreçlerini otomatikleştirmek
+
 ✅ Yönetici kontrolünü artırmak
+
 ✅ Kullanıcı dostu bir deneyim sunmaktır
+
 
 ---
 
@@ -92,10 +97,15 @@ Etkinliklerin oluşturulmasını ve yönetimini sağlar.
 ## Temel Özellikler
 
 ✅ Katılımcı ekleme
+
 ✅ Katılımcı çıkarma
+
 ✅ Kapasite kontrolü
+
 ✅ Doluluk takibi
+
 ✅ Etkinlik raporlama
+
 
 ## Kullanılan Metotlar
 
@@ -152,7 +162,9 @@ Kullanıcı sisteme giriş yaptığında ilk olarak bu ekran görüntülenir.
 ## Özellikleri
 
 ✅ KPI kartları
+
 ✅ Etkinlik durum tabloları
+
 ✅ Gerçek zamanlı doluluk bilgisi
 
 ---
@@ -182,8 +194,11 @@ Katılımcı kayıt işlemleri bu bölümden gerçekleştirilir.
 ## Yapılabilen İşlemler
 
 ✅ Etkinlik seçimi
+
 ✅ Katılımcı ekleme
+
 ✅ E-posta doğrulama
+
 ✅ Kapasite kontrolü
 
 ---
@@ -230,8 +245,11 @@ Varsayılan Şifre: 123
 ## Yönetici İşlemleri
 
 ✅ Etkinlik silme
+
 ✅ Katılımcı kaydı iptali
+
 ✅ Sistem loglarını görüntüleme
+
 ✅ İşlem geçmişi takibi
 
 ---
@@ -252,11 +270,17 @@ Projede veri güvenliği için çeşitli yazılım prensipleri uygulanmıştır.
 # 📌 Sistem Avantajları
 
 ✅ Kullanıcı dostu arayüz
+
 ✅ Kolay yönetim paneli
+
 ✅ Hızlı kayıt sistemi
+
 ✅ Otomatik bilet üretimi
+
 ✅ Etkinlik kapasite kontrolü
+
 ✅ Detaylı raporlama sistemi
+
 ✅ Güvenli yönetici paneli
 
 ---
@@ -266,8 +290,11 @@ Projede veri güvenliği için çeşitli yazılım prensipleri uygulanmıştır.
 ProEvent sistemi;
 
 🎯 Etkinlik yönetimini kolaylaştırır
+
 🎯 Kayıt süreçlerini hızlandırır
+
 🎯 Organizasyon takibini merkezileştirir
+
 🎯 Modern bir kullanıcı deneyimi sunar
 
 ---
