@@ -1,5 +1,5 @@
-# Etkinlik-Kay-t-Sistemi
-Etkinlik Kayıt Sistemi Proje Teslimi
+# Etkinlik-Kayit-Sistemi
+
 ProEvent: Etkinlik Kayıt Sistemi Teknik Dokümantasyon ve Kullanıcı Rehberi
 
 Proje Hakkında
