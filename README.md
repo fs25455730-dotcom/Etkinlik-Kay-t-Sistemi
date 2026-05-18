@@ -1,60 +1,288 @@
 # Etkinlik-Kayit-Sistemi
 
-ProEvent: Etkinlik Kayıt Sistemi Teknik Dokümantasyon ve Kullanıcı Rehberi
+# 🎟️ ProEvent — Etkinlik Kayıt Sistemi
 
-Proje Hakkında
-ProEvent, etkinlik organizasyonlarının dijital ortamda yönetilmesini sağlayan bir etkinlik kayıt sistemidir. Sistem sayesinde etkinlik oluşturma, katılımcı kaydı alma, bilet üretme ve raporlama işlemleri kolayca gerçekleştirilebilir.
+Modern etkinlik organizasyonları için geliştirilmiş kapsamlı bir kayıt ve bilet yönetim sistemi.
 
-Uygulama iki ana bölümden oluşmaktadır:
+---
 
-Backend (arka plan sistemi) Grafik Kullanıcı Arayüzü (GUI) 2. Kullanılan Teknolojiler Teknoloji Amaç Python Ana programlama dili PyQt5 Grafik kullanıcı arayüzü UUID Benzersiz bilet numarası üretimi OOP (Nesne Yönelimli Programlama) Sistem mimarisi 3. Sistem Mimarisi
+# 📌 Proje Tanıtımı
 
-Sistemin çekirdeği üç temel sınıftan oluşmaktadır.
+**ProEvent**, etkinlik oluşturma, katılımcı yönetimi, bilet üretimi ve raporlama işlemlerini tek bir platform üzerinden gerçekleştirmek amacıyla geliştirilmiş masaüstü tabanlı bir etkinlik kayıt sistemidir.
 
-3.1 Katilimci Sınıfı
+Bu proje sayesinde organizasyon süreçleri dijital ortama taşınarak:
 
-Katılımcıların sisteme kayıt edilmesini ve bilgilerinin yönetilmesini sağlar.
+* Katılımcı kayıtları kolaylaştırılır
+* Etkinlik kapasitesi kontrol edilir
+* Otomatik bilet sistemi sağlanır
+* Yönetim işlemleri merkezi hale getirilir
+* Raporlama süreçleri hızlandırılır
 
-Tutulan Bilgiler ID Ad Soyad E-posta Temel Metotlar Metot Görev get_ad() Katılımcı adını döndürür get_email() E-posta bilgisini döndürür bilgileri_guncelle() Katılımcı bilgilerini günceller 3.2 Etkinlik Sınıfı
+---
 
-Etkinliklerin oluşturulmasını ve yönetilmesini sağlar.
+# 🚀 Projenin Amacı
 
-Tutulan Bilgiler Etkinlik adı Tarih Kapasite Katılımcı listesi Temel Özellikler Kapasite kontrolü Katılımcı ekleme Katılımcı çıkarma Doluluk takibi Temel Metotlar Metot Görev katilimci_ekle() Yeni katılımcı ekler katilimci_cikar() Katılımcıyı siler katilimci_raporu() Katılımcı listesini raporlar 3.3 Bilet Sınıfı
+Bu sistemin temel amacı:
 
-Katılımcı ile etkinliği birbirine bağlayan yapıdır.
+✅ Etkinlik yönetimini kolaylaştırmak
+✅ Katılımcı kayıtlarını düzenlemek
+✅ Bilet süreçlerini otomatikleştirmek
+✅ Yönetici kontrolünü artırmak
+✅ Kullanıcı dostu bir deneyim sunmaktır
 
-Özellikler UUID tabanlı benzersiz bilet numarası üretir Bilet oluşturma Bilet iptali Temel Metotlar Metot Görev bilet_olustur() Yeni bilet oluşturur bilet_iptal() Mevcut bileti iptal eder 4. Grafik Kullanıcı Arayüzü (GUI)
+---
 
-Arayüz PyQt5 kullanılarak geliştirilmiştir.
+# 🛠️ Kullanılan Teknolojiler
 
-Sistem toplamda 6 temel modülden oluşmaktadır.
+| Teknoloji | Açıklama                           |
+| --------- | ---------------------------------- |
+| Python    | Ana programlama dili               |
+| PyQt5     | Grafik kullanıcı arayüzü           |
+| UUID      | Benzersiz bilet numarası üretimi   |
+| OOP       | Nesne yönelimli programlama yapısı |
 
-4.1 Dashboard
+---
 
-Sistemin genel durumunu özetleyen ana ekrandır.
+# 🧠 Yazılım Mimarisi
 
-Gösterilen Bilgiler Toplam etkinlik sayısı Toplam kayıt sayısı Toplam bilet sayısı Aktif etkinliklerin doluluk oranı Özellikler KPI kartları Durum tabloları Doluluk takibi 4.2 Etkinlik Ekle
+Sistem nesne yönelimli programlama (OOP) prensipleri kullanılarak geliştirilmiştir.
 
-Yeni etkinlik oluşturma ekranıdır.
+Kod yapısı modüler şekilde hazırlanmıştır ve 3 temel sınıftan oluşmaktadır.
 
-Girilen Bilgiler Etkinlik adı Tarih Kontenjan Özellikler Hızlı etkinlik oluşturma Tarih doğrulama Kapasite belirleme 4.3 Kayıt Yönetimi
+---
 
-Katılımcı kayıt işlemlerinin yapıldığı bölümdür.
+# 👤 Katilimci Sınıfı
 
-Özellikler Etkinlik seçimi Katılımcı ekleme E-posta doğrulama Kapasite kontrolü 4.4 Biletler
+Katılımcı bilgilerinin tutulduğu yapıdır.
 
-Sistemde oluşturulan tüm biletleri listeler.
+## Tutulan Bilgiler
 
-Özellikler Bilet listeleme Bilet detay görüntüleme Görsel bilet ekranı 4.5 Rapor Modülü
+* Katılımcı ID
+* Ad Soyad
+* E-posta adresi
 
-Etkinlik analizlerinin görüntülendiği bölümdür.
+## Görevleri
 
-Gösterilen Bilgiler Doluluk oranı Katılımcı listesi İlerleme çubuğu Etkinlik istatistikleri 4.6 Admin Paneli
+* Katılımcı oluşturma
+* Bilgi güncelleme
+* E-posta erişimi
+* Kullanıcı bilgilerini yönetme
 
-Yönetici işlemlerinin yapıldığı güvenli alandır.
+## Kullanılan Metotlar
 
-Güvenlik Şifre koruması Varsayılan şifre: 123 Yapılabilen İşlemler Etkinlik silme Katılımcı kaydı iptali Sistem loglarını görüntüleme 5. Sistem Özellikleri Güvenlik Özellikleri Kapsülleme (Encapsulation) Gizli değişken kullanımı Yönetici paneli koruması Kullanıcı Deneyimi Basit arayüz Hızlı işlem akışı Görsel raporlama Veri Yönetimi Benzersiz bilet sistemi Katılımcı takibi Etkinlik kapasite kontrolü 6. Sonuç
+```python
+get_ad()
+get_email()
+bilgileri_guncelle()
+```
 
-ProEvent sistemi, etkinlik organizasyon süreçlerini dijitalleştirerek kayıt, biletleme ve raporlama işlemlerini merkezi bir yapı üzerinden yönetmeyi amaçlamaktadır.
+---
 
-Nesne yönelimli programlama prensipleri kullanılarak geliştirilen sistem; ölçeklenebilir, düzenli ve kullanıcı dostu bir yapı sunmaktadır.
+# 🎉 Etkinlik Sınıfı
+
+Etkinliklerin oluşturulmasını ve yönetimini sağlar.
+
+## Tutulan Bilgiler
+
+* Etkinlik adı
+* Tarih bilgisi
+* Katılımcı kapasitesi
+* Katılımcı listesi
+
+## Temel Özellikler
+
+✅ Katılımcı ekleme
+✅ Katılımcı çıkarma
+✅ Kapasite kontrolü
+✅ Doluluk takibi
+✅ Etkinlik raporlama
+
+## Kullanılan Metotlar
+
+```python
+katilimci_ekle()
+katilimci_cikar()
+katilimci_raporu()
+```
+
+---
+
+# 🎫 Bilet Sınıfı
+
+Katılımcı ile etkinliği birbirine bağlayan sistem bileşenidir.
+
+Her bilet için otomatik olarak benzersiz bir UUID oluşturulur.
+
+## Özellikler
+
+* Benzersiz bilet numarası üretimi
+* Bilet oluşturma
+* Bilet iptal işlemleri
+
+## Kullanılan Metotlar
+
+```python
+bilet_olustur()
+bilet_iptal()
+```
+
+---
+
+# 🖥️ Grafik Kullanıcı Arayüzü (GUI)
+
+Sistem arayüzü **PyQt5** kullanılarak geliştirilmiştir.
+
+Kullanıcı dostu ve modern bir tasarım hedeflenmiştir.
+
+---
+
+# 📊 Dashboard
+
+Ana kontrol panelidir.
+
+Kullanıcı sisteme giriş yaptığında ilk olarak bu ekran görüntülenir.
+
+## Gösterilen Bilgiler
+
+* Toplam etkinlik sayısı
+* Toplam kayıt sayısı
+* Toplam bilet sayısı
+* Aktif etkinliklerin doluluk oranı
+
+## Özellikleri
+
+✅ KPI kartları
+✅ Etkinlik durum tabloları
+✅ Gerçek zamanlı doluluk bilgisi
+
+---
+
+# ➕ Etkinlik Ekle Modülü
+
+Yeni etkinliklerin oluşturulduğu ekrandır.
+
+## Girilen Bilgiler
+
+* Etkinlik adı
+* Tarih
+* Kontenjan bilgisi
+
+## Sağlanan Avantajlar
+
+* Hızlı etkinlik oluşturma
+* Tarih doğrulama
+* Kapasite belirleme
+
+---
+
+# 🧾 Kayıt Yönetimi
+
+Katılımcı kayıt işlemleri bu bölümden gerçekleştirilir.
+
+## Yapılabilen İşlemler
+
+✅ Etkinlik seçimi
+✅ Katılımcı ekleme
+✅ E-posta doğrulama
+✅ Kapasite kontrolü
+
+---
+
+# 🎟️ Bilet Yönetimi
+
+Sistemde oluşturulan tüm biletler bu bölümde görüntülenir.
+
+## Özellikler
+
+* Bilet listeleme
+* Detay görüntüleme
+* Görsel bilet ekranı
+* UUID bazlı bilet sistemi
+
+---
+
+# 📈 Raporlama Sistemi
+
+Etkinlik analizlerinin görüntülendiği modüldür.
+
+## Sunulan Veriler
+
+* Doluluk oranı
+* Katılımcı listesi
+* İlerleme çubukları
+* Etkinlik istatistikleri
+
+---
+
+# 🔐 Admin Paneli
+
+Yönetici işlemleri için özel olarak tasarlanmış güvenli bölümdür.
+
+## Güvenlik Özellikleri
+
+* Şifre koruması
+* Yetki kontrolü
+
+```text
+Varsayılan Şifre: 123
+```
+
+## Yönetici İşlemleri
+
+✅ Etkinlik silme
+✅ Katılımcı kaydı iptali
+✅ Sistem loglarını görüntüleme
+✅ İşlem geçmişi takibi
+
+---
+
+# 🔒 Güvenlik ve Yazılım Yaklaşımı
+
+Projede veri güvenliği için çeşitli yazılım prensipleri uygulanmıştır.
+
+## Kullanılan Yaklaşımlar
+
+* Encapsulation (Kapsülleme)
+* Private değişken kullanımı
+* Modüler kod yapısı
+* Nesne yönelimli programlama
+
+---
+
+# 📌 Sistem Avantajları
+
+✅ Kullanıcı dostu arayüz
+✅ Kolay yönetim paneli
+✅ Hızlı kayıt sistemi
+✅ Otomatik bilet üretimi
+✅ Etkinlik kapasite kontrolü
+✅ Detaylı raporlama sistemi
+✅ Güvenli yönetici paneli
+
+---
+
+# 📷 Uygulama Özeti
+
+ProEvent sistemi;
+
+🎯 Etkinlik yönetimini kolaylaştırır
+🎯 Kayıt süreçlerini hızlandırır
+🎯 Organizasyon takibini merkezileştirir
+🎯 Modern bir kullanıcı deneyimi sunar
+
+---
+
+# 🏁 Sonuç
+
+ProEvent, etkinlik yönetim süreçlerini dijitalleştirmek amacıyla geliştirilmiş modern bir masaüstü uygulamasıdır.
+
+Nesne yönelimli programlama yaklaşımı sayesinde:
+
+* Düzenli
+* Ölçeklenebilir
+* Güvenli
+* Kullanıcı dostu
+
+bir yapı sunmaktadır.
+
+Bu proje hem yazılım mimarisi hem de kullanıcı deneyimi açısından gerçek bir etkinlik yönetim sistemi altyapısı sağlamaktadır.
